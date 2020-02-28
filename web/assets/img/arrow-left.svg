@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Custom Preset</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Custom-Preset" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow-right" transform="translate(7.000000, 10.000000)" fill="#000000" fill-rule="nonzero">
+            <path d="M18.354,6.14625 L12.354,0.14625 C12.159,-0.04875 11.842,-0.04875 11.647,0.14625 C11.452,0.34125 11.452,0.65825 11.647,0.85325 L16.793,5.99925 L0.5,5.99925 C0.224,5.99925 0,6.22325 0,6.49925 C0,6.77525 0.224,6.99925 0.5,6.99925 L16.793,6.99925 L11.647,12.14525 C11.452,12.34025 11.452,12.65725 11.647,12.85225 C11.745,12.95025 11.873,12.99825 12.001,12.99825 C12.129,12.99825 12.257,12.94925 12.355,12.85225 L18.355,6.85225 C18.55,6.65725 18.55,6.34025 18.355,6.14525 L18.354,6.14625 Z" id="Path" transform="translate(9.250625, 6.499125) scale(-1, 1) translate(-9.250625, -6.499125) "></path>
+        </g>
+    </g>
+</svg>
