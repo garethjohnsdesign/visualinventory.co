@@ -81,7 +81,7 @@ return [
     'production' => [
 
         'siteUrl' => [
-            'default' => 'https://visualinventory.frb.io',
+            'default' => 'https://visual-inventory.frb.io',
         ],
 
         'devMode' => false,
