@@ -34,7 +34,8 @@
     "ether/simplemap": "3.8.1",
     "rias/craft-position-fieldtype": "1.0.14",
     "craftcms/feed-me": "4.2.0.1",
-    "venveo/craft-bulkedit": "2.0.0"
+    "venveo/craft-bulkedit": "2.0.0",
+    "ether/tags": "1.0.6"
   },
   "autoload": {
     "psr-4": {

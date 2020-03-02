@@ -694,3 +694,30 @@ overflow: hidden;
 .site__grab {
   border: 1px solid $black;
 }
+
+.menubar {
+  width: 70px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 15;
+}
+
+.wrapper {
+  margin-left: 70px;
+}
+
+.off-canvas {
+  margin-left: 70px;
+}
+
+.menu .menu-text {
+font-weight: normal;
+}
+
+.button-group {
+  flex-wrap: wrap;
+}

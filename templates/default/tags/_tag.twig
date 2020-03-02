@@ -1,5 +1,4 @@
-{% set bodyClass = 'home' %}
-
+{% set bodyClass = 'tags' %}
 
 {% extends "default/_layouts/site" %}
 
@@ -9,15 +8,25 @@
 
 {% block main %}
 
-{# Description #}
+{% set tag = craft.tags.slug( craft.request.segment(2) ).first() %}
+{% set title = craft.tags.slug( craft.request.segment(2) ).first() %}
+
+{% if not tag %}
+{% exit 404 %}
+{% endif %}
+
+
 <div class="grid-x grid-padding-x grid-padding-y">
-  <div class="small-12 medium-8 cell text-left">
-    <h2>{{seo.seoDescription}}</h2>
+  <div class="small-12 cell">
+    <h1>{{ tag.title }}</h1>
   </div>
 </div>
-{# End Description #}
 
-{# Sites #}
+  {% set sites = craft.entries.section('sites').relatedTo(tag).order('title').all() %}
+
+
+
+ {# Sites #}
 <div class="grid-x grid-padding-x grid-padding-y">
   {% for site in sites %}
     <div class="small-12 medium-6 large-4 cell">
@@ -32,11 +41,11 @@
         </div>
 
         <div class="grid-x grid-padding-x margin-top-1">
-          <div class="small-12 medium-auto cell">
+          <div class="small-12 medium-6 cell">
           {{ site.title }}
           </div>
-          <div class="small-12 medium-shrink cell text-left medium-text-right medium-gray">
-          <small>{{ site.postDate | date("M d — Y") }}</small>
+          <div class="small-12 medium-6 cell text-right">
+          {{ site.postDate | date("M d, Y") }}
           </div>
         </div>
       </a>
@@ -45,9 +54,11 @@
 </div>
 <!-- End sites -->
 
+
+
+
 {% endblock %}
 
 {% block footer %}
 {% include "_includes/global/footer" %}
 {% endblock %}
-

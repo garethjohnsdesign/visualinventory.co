@@ -1,9 +1,51 @@
 {% extends "default/_layouts/base" %}
+{% set sites = craft.entries
+.section('sites')
+.order('postDate desc')
+.all() %}
+
 
 {% block body %}
 
+
+
+<div class="off-canvas position-left black-background-color" id="offCanvas" data-off-canvas data-transition="overlap">
+
+  <div class="grid-x grid-padding-x grid-padding-y">
+    <div class="small-12 medium-8 cell text-left">
+    <ul class="menu">
+      <li><a href="/info" class="">Info</a></li>
+      <li><a href="/submit" class="">Submit</a></li>
+    </ul>
+    </div>
+  </div>
+
+{# Tags #}
+<div class="grid-x grid-padding-x grid-padding-y">
+  <div class="small-12 medium-8 cell text-left">
+    {% set allGalleryTags = craft.tags.relatedTo(sites)|group('group') %}
+    {% for tagGroup, tagsInGroup in allGalleryTags %}
+      <div class="margin-bottom-1">{{ tagGroup }}</div>
+      <div class="button-group">
+        {# Loop the tags of this group #}
+        {% for tag in tagsInGroup %}
+          <a href="{{ siteUrl }}tags/{{ tag.slug }}" class="button secondary small float-left">{{ tag.title }}</a>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{# End Tags #}
+
+
+</div>
+
+<header class="menubar black-background-color">
+  <button type="button" class="button" data-toggle="offCanvas"><svg class="icon icon-menu"><use xlink:href="/assets/icons/symbol-defs.svg#icon-menu"></use></svg></button>
+</header>
+
 <!-- Wrapper -->
-<div class="wrapper grid-y align-justify viewheight" data-off-canvas-content>
+<div class="wrapper grid-y align-justify viewheight off-canvas-content" data-off-canvas-content>
 
 <div class="" id="swup-navigation">
 {% block navigation %}

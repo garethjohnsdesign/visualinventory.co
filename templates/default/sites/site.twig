@@ -23,12 +23,48 @@
 
 <div class="grid-x grid-padding-x grid-padding-y align-center">
 
-    <div class="small-12 medium-6 cell text-center">
+    <div class="small-12 medium-8 large-8 cell">
         {% set image = entry.image.one() %}
-        <div class="light-gray-background-color">
-        <div class="image--16-9" {% if image %}data-interchange="{% include "_includes/images/contained/16-9/interchange-img-small-12-medium-4" %}" data-aos="fade-in" data-aos-delay="100"{% endif %}></div>
+        <div class="grid-x grid-padding-x grid-padding-y">
+          <div class="small-12 medium-12 cell">
+            <div class="light-gray-background-color site__grab">
+              <div class="image--1920-1200" {% if image %}data-interchange="{% include "_includes/images/contained/1920-1200/interchange-img-small-12-medium-12" %}" data-aos="fade-in" data-aos-delay="100"{% endif %}></div>
+            </div>
+          </div>
         </div>
-        <div class="margin-top-1 text-center">{{ entry.title }}</div>
+
+        <div class="grid-x grid-padding-x margin-top-1">
+          <div class="small-12 medium-6 cell">
+          {{ entry.title }}
+          </div>
+          <div class="small-12 medium-6 cell text-right">
+          {{ entry.postDate | date("M d, Y") }}
+          </div>
+        </div>
+
+  <div class="grid-x grid-padding-x margin-top-1">
+    <div class="small-12 medium-6 cell">
+{#
+    <ul>
+    {% for tag in craft.tags.relatedTo(entry) %}
+        <li>{{ tag.title }}</li>
+    {% endfor %}
+    </ul>
+#}
+
+{% set subjectsTags = entry.subjects.all() %}
+{% if subjectsTags|length %}
+  <ul class="menu">
+    <li class="menu-text">Subjects</li>
+    {% for rel in subjectsTags %}
+    <li><a href="{{ url('tags/'~rel.slug) }}">{{ rel.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+    </div>
+  </div>
+
     </div>
 
 </div>
