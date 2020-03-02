@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c628f6570e19778315345458933149fd",
+    "content-hash": "572bda093b495c7ec68c48b12da16963",
     "packages": [
         {
             "name": "aelvan/imager",
@@ -1394,11 +1394,11 @@
         },
         {
             "name": "ether/simplemap",
-            "version": "3.8.0",
+            "version": "3.8.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ethercreative/simplemap/zipball/b342e77d7527905ab311bf36a8f2608f220f09b2",
-                "reference": "b342e77d7527905ab311bf36a8f2608f220f09b2",
+                "url": "https://api.github.com/repos/ethercreative/simplemap/zipball/58c1c5ecc4ad45048e5f32469ebbd28c542342a1",
+                "reference": "58c1c5ecc4ad45048e5f32469ebbd28c542342a1",
                 "shasum": ""
             },
             "require": {
@@ -1435,7 +1435,7 @@
                 "source": "https://github.com/ethercreative/simplemap",
                 "issues": "https://github.com/ethercreative/simplemap/issues"
             },
-            "time": "2020-02-25T16:03:42+00:00"
+            "time": "2020-02-27T12:55:07+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",

@@ -1,0 +1,42 @@
+{% set bodyClass = 'site' %}
+
+{# Set parameters for prev/next elements list #}
+{% set params = craft.entries
+.section('sites')
+.order('postDate desc') %}
+
+{% set title = entry.title %}
+
+{# Get the prev/next elements #}
+{% set prevEntry = entry.getPrev(params) %}
+{% set nextEntry = entry.getNext(params) %}
+
+{% extends "_layouts/site" %}
+
+
+{% block navigation %}
+{% include "_includes/global/navigation" %}
+{% endblock %}
+
+
+{% block main %}
+
+<div class="grid-x grid-padding-x grid-padding-y align-center">
+
+    <div class="small-12 medium-6 cell text-center">
+        {% set image = entry.image.one() %}
+        <div class="light-gray-background-color">
+        <div class="image--16-9" {% if image %}data-interchange="{% include "_includes/images/contained/16-9/interchange-img-small-12-medium-4" %}" data-aos="fade-in" data-aos-delay="100"{% endif %}></div>
+        </div>
+        <div class="margin-top-1 text-center">{{ entry.title }}</div>
+    </div>
+
+</div>
+<!-- End sites -->
+
+{% endblock %}
+
+
+{% block footer %}
+{% include "_includes/global/footer" %}
+{% endblock %}

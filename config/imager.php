@@ -6,7 +6,7 @@ return [
 
       'transformer' => 'imgix',
 
-      'imagerUrl' => 'http://storage.googleapis.com/kimi-hammerstroem/',
+      'imagerUrl' => 'http://storage.googleapis.com/visual-inventory/',
 
       // Enables Imgix integration
       'imgixEnabled' => true,
@@ -14,7 +14,7 @@ return [
 
       'imgixConfig' => [
           'default' => [
-              'domains' => ['kimi-hammerstroem.imgix.net'],
+              'domains' => ['visual-inventory.imgix.net'],
               'useHttps' => true,
               'signKey' => '',
               'sourceIsWebProxy' => false,

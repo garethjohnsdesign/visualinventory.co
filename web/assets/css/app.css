@@ -9928,6 +9928,26 @@ p a {
     height: 100%;
     width: 100%; }
 
+.image--1920-1200 {
+  position: relative;
+  background-size: cover;
+  background-position: 50%; }
+  .image--1920-1200:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 62.5%; }
+  .image--1920-1200 .content {
+    transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%; }
+
 .image--24-1 {
   position: relative;
   background-size: cover;
@@ -10243,6 +10263,9 @@ width:auto;
 .swiper-wrapper {
   align-items: center;
   /* add this will all relevant prefixes */ }
+
+.site__grab {
+  border: 1px solid #0a0a0a; }
 
 .tippy-tooltip[data-animation=fade][data-state=hidden] {
   opacity: 0; }

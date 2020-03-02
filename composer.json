@@ -31,7 +31,7 @@
     "fortrabbit/craft-copy": "1.0.0-RC9",
     "verbb/field-manager": "2.1.1",
     "carlcs/craft-deleteentryversions": "2.0.0",
-    "ether/simplemap": "3.8.0",
+    "ether/simplemap": "3.8.1",
     "rias/craft-position-fieldtype": "1.0.14",
     "craftcms/feed-me": "4.2.0.1",
     "venveo/craft-bulkedit": "2.0.0"

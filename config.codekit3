@@ -9,12 +9,28 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/.env": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/.env",
+		"oF": 0
+		},
 	"/.env.example": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/.env.example",
+		"oF": 0
+		},
+	"/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/.gitattributes",
 		"oF": 0
 		},
 	"/.gitignore": {
@@ -520,6 +536,30 @@
 		"oAP": "/templates/default/_includes/images/contained/16-9/interchange-img-small-12-medium-6.twig",
 		"oF": 0
 		},
+	"/templates/default/_includes/images/contained/1920-1200/interchange-img-small-12-medium-12.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/default/_includes/images/contained/1920-1200/interchange-img-small-12-medium-12.twig",
+		"oF": 0
+		},
+	"/templates/default/_includes/images/contained/1920-1200/interchange-img-small-12-medium-4.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/default/_includes/images/contained/1920-1200/interchange-img-small-12-medium-4.twig",
+		"oF": 0
+		},
+	"/templates/default/_includes/images/contained/1920-1200/interchange-img-small-12-medium-6.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/default/_includes/images/contained/1920-1200/interchange-img-small-12-medium-6.twig",
+		"oF": 0
+		},
 	"/templates/default/_includes/images/contained/3-4/interchange-img-small-12-medium-12.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -848,14 +888,6 @@
 		"oAP": "/templates/default/_layouts/site.twig",
 		"oF": 0
 		},
-	"/templates/default/archive/archive.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/templates/default/archive/archive.twig",
-		"oF": 0
-		},
 	"/templates/default/category/category.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -912,28 +944,36 @@
 		"oAP": "/templates/default/page/page.twig",
 		"oF": 0
 		},
-	"/templates/default/projects/_types/gallery.twig": {
+	"/templates/default/sites/_types/sites.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/default/projects/_types/gallery.twig",
+		"oAP": "/templates/default/sites/_types/sites.twig",
 		"oF": 0
 		},
-	"/templates/default/projects/_types/video.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/templates/default/projects/_types/video.twig",
-		"oF": 0
-		},
-	"/templates/default/projects/project.twig": {
+	"/templates/default/sites/_types/video.twig": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/templates/default/projects/project.twig",
+		"oAP": "/templates/default/sites/_types/video.twig",
+		"oF": 0
+		},
+	"/templates/default/sites/site.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/default/sites/site.twig",
+		"oF": 0
+		},
+	"/templates/default/submit/submit.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/default/submit/submit.twig",
 		"oF": 0
 		},
 	"/vendor": {
@@ -1934,7 +1974,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 499797547,
-	"displayValue": "Boilerplate",
+	"displayValue": "Visual Inventory",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/web/assets/favicons/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0
@@ -3415,7 +3455,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "https://boilerplate.test",
+	"externalServerAddress": "https://visualinventory.test",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",

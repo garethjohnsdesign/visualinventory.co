@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@swup/body-class-plugin@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@swup/body-class-plugin/-/body-class-plugin-1.0.1.tgz#ed713620f03eb9fdd58ed37902e2f3d1f4f44e87"
-  integrity sha512-y8vAFuT/ytmoTd8B0gJeXXr9aS20Wslfi68Sk72TKZNG5LUk/0Mcr8w8YgJX+u8CvQRr3QBEg8ruN9WCfHeBdQ==
+"@swup/body-class-plugin@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@swup/body-class-plugin/-/body-class-plugin-1.0.2.tgz#40bffaf73e950ee5149267da669457e18fd1c957"
+  integrity sha512-fzK/sY1QeDJje0mNgPuETRmdLOrdJZzoG96GTcTEjBATXAjDbcGvodCCRDE8eNYQMWayHD2Lks4avV9e5cvQ7A==
   dependencies:
     "@swup/plugin" "^1.0.0"
 
@@ -121,6 +121,11 @@ lodash.throttle@^4.0.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
   integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
+
+motion-ui@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/motion-ui/-/motion-ui-2.0.3.tgz#3a87f8fea4512d654c0822a0b346f23dadf0d0b7"
+  integrity sha512-f9xzh/hbZTUYjk4M7y1aDcsiPTfqUbuvCv/+If05TSIBEJMu3hGBU+YSe9csQPP7WBBHXxjossEygM/TJo2enw==
 
 opencollective-postinstall@^2.0.2:
   version "2.0.2"

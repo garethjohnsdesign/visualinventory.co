@@ -51,7 +51,7 @@ return [
     // Development environment settings
     'dev' => [
        'siteUrl' => [
-          'default' => 'https://kimihammerstroem.test',
+          'default' => 'https://visualinventory.test',
         ],
 
         // Dev Mode (see https://craftcms.com/support/dev-mode)
@@ -66,7 +66,7 @@ return [
     'staging' => [
 
         'siteUrl' => [
-            'default' => 'https://kimihammerstroem-stage.frb.io',
+            'default' => 'https://visualinventory-stage.frb.io',
         ],
 
 
@@ -81,7 +81,7 @@ return [
     'production' => [
 
         'siteUrl' => [
-            'default' => 'https://kimihammerstroem.frb.io',
+            'default' => 'https://visualinventory.frb.io',
         ],
 
         'devMode' => false,

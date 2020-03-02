@@ -1,4 +1,8 @@
 {% set bodyClass = 'home' %}
+{% set sites = craft.entries
+.section('sites')
+.order('postDate desc')
+.all() %}
 
 {% extends "default/_layouts/site" %}
 
@@ -7,38 +11,41 @@
 {% endblock %}
 
 {% block main %}
-
-<!-- Carousel -->
-<div class="swiper-container" data-aos="fade-in" data-aos-delay="100">
-
-  <div class="swiper-button-prev-test flex-container align-center-middle"></div>
-  <div class="swiper-button-next-test flex-container align-center-middle"></div>
-
-  <div class="swiper-wrapper">
-
-    {% for matrixBlock in entry.images.all() %}
-      {% switch matrixBlock.type %}
-      {% case "images" %}
-              {% for image in matrixBlock.images.all() %}
-                <div class="swiper-slide">
-
-
-                        {% switch image.aspectRatio %}
-                          {% case "1-1" or "5-4" or "5-7" or "6-4" or "7-5" or "16-9" or "3-4" %}
-                          <img class="max-viewheight-50 testing" data-interchange="{% include "_includes/images/contained/"~image.aspectRatio~"/interchange-img-small-12-medium-12" %}"></img>
-                          {% default %}
-                          <img class="max-viewheight-50 testing" data-interchange="{% include "_includes/images/contained/7-5/interchange-img-small-12-medium-12" %}"></img>
-                        {% endswitch %}
-
-                </div>
-              {% endfor %}
-      {% endswitch %}
-    {% endfor %}
-
+{# Description #}
+<div class="grid-x grid-padding-x grid-padding-y">
+  <div class="small-12 medium-8 cell text-left">
+    <h1>{{seo.seoDescription}}</h1>
   </div>
-
 </div>
-<!-- End Carousel -->
+{# End Description #}
+
+{# Sites #}
+<div class="grid-x grid-padding-x grid-padding-y">
+  {% for site in sites %}
+    <div class="small-12 medium-6 large-4 cell">
+      <a href="{{ site.url }}">
+        {% set image = site.image.one() %}
+        <div class="grid-x grid-padding-x grid-padding-y">
+          <div class="small-12 medium-12 cell">
+            <div class="light-gray-background-color site__grab">
+              <div class="image--1920-1200" {% if image %}data-interchange="{% include "_includes/images/contained/1920-1200/interchange-img-small-12-medium-4" %}" data-aos="fade-in" data-aos-delay="100"{% endif %}></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-x grid-padding-x grid-padding-y">
+          <div class="small-12 medium-6 cell">
+          {{ site.title }}
+          </div>
+          <div class="small-12 medium-6 cell text-right">
+          {{ site.postDate | date("M d, Y") }}
+          </div>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+</div>
+<!-- End sites -->
 
 {% endblock %}
 

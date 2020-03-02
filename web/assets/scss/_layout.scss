@@ -330,6 +330,12 @@ p a {
   background-position: 50%;
 }
 
+.image--1920-1200 {
+  @include aspect-ratio (1920, 1200);
+  background-size: cover; 
+  background-position: 50%;
+}
+
 .image--24-1 {
   @include aspect-ratio (2.4, 1);
   background-size: cover; 
@@ -683,4 +689,8 @@ overflow: hidden;
 
 .swiper-wrapper {
   align-items: center; /* add this will all relevant prefixes */
+}
+
+.site__grab {
+  border: 1px solid $black;
 }
