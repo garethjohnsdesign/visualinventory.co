@@ -25,6 +25,8 @@
 
     <div class="small-12 medium-8 large-8 cell">
         {% set image = entry.image.one() %}
+        <a href="{{entry.domain }}">
+
         <div class="grid-x grid-padding-x grid-padding-y">
           <div class="small-12 medium-12 cell">
             <div class="light-gray-background-color site__grab">
@@ -41,6 +43,8 @@
           {{ entry.postDate | date("M d, Y") }}
           </div>
         </div>
+
+        </a>
 
   <div class="grid-x grid-padding-x margin-top-1">
     <div class="small-12 medium-6 cell">
