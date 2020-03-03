@@ -92,7 +92,7 @@ $foundation-palette: (
   primary: $black, //black
 //   primary: #ed3348, //red
   secondary: #767676,
-  tertiary: #fbeed6,
+  tertiary: $white,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37,
@@ -110,7 +110,7 @@ $global-weight-bold: bold;
 $global-radius: 0;
 // $global-radius: 5px;
 $global-menu-padding: 0.7rem 1rem;
-$global-menu-padding: 0.7rem 0.7rem;
+$global-menu-padding: 0.7rem 0.7rem 0.7rem 0rem;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
 $global-flexbox: true;
@@ -573,7 +573,7 @@ $offcanvas-sizes: (
 */
 $offcanvas-sizes: (
   small: 250px,
-  medium: 450px,
+  medium: 100vw,
 );
 $offcanvas-vertical-sizes: (
   small: 250px,
@@ -951,7 +951,8 @@ $grid-margin-gutters: (
 $grid-margin-gutters: (
   small: 48px,
   medium: 48px,
-  large: 64px
+  large: 64px,
+  xlarge: 96px,
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;

@@ -45,6 +45,10 @@
 // 2. Global
 // ---------
 
+.border-top {
+  border-top: 1px solid $primary-color;
+}
+
 .viewheight {
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
@@ -389,6 +393,7 @@ p a {
 
 .wrapper {
   min-height: 100vh;
+/*
   padding: 1rem;
   @include breakpoint(medium) {
     padding: 1.5rem;
@@ -396,6 +401,7 @@ p a {
   @include breakpoint(large) {
     padding: 2rem;
   }
+*/
 }
 
 .footer {

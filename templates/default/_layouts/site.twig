@@ -29,7 +29,7 @@
       <div class="button-group">
         {# Loop the tags of this group #}
         {% for tag in tagsInGroup %}
-          <a href="{{ siteUrl }}tags/{{ tag.slug }}" class="button secondary small float-left">{{ tag.title }}</a>
+          <a href="{{ siteUrl }}tags/{{ tag.slug }}" class="small button rounded hollow tertiary">{{ tag.title }}</a>
         {% endfor %}
       </div>
     {% endfor %}
