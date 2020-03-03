@@ -498,6 +498,7 @@ padding-bottom: 20vh;
 }
 
 
+/*
 .h1 {
   -webkit-text-stroke: 2px transparent;
   line-height: 1;
@@ -510,6 +511,7 @@ padding-bottom: 20vh;
   -webkit-text-stroke: 2px $white;
   -webkit-text-fill-color: transparent;
 }
+*/
 
 .project-container {
 position: fixed;
@@ -691,7 +693,7 @@ overflow: hidden;
   align-items: center; /* add this will all relevant prefixes */
 }
 
-.site__grab {
+.site__image {
   border: 1px solid $black;
 }
 
@@ -720,4 +722,20 @@ font-weight: normal;
 
 .button-group {
   flex-wrap: wrap;
+}
+
+
+.site__image {
+  .content:hover {
+  background-color: rgba($primary-color, 0.95);
+  }
+  &:hover .site__links {
+  opacity: 1;
+  transition: $primary-transition;
+  }
+}
+
+.site__links {
+  z-index: 1;
+  opacity: 0;
 }

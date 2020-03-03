@@ -21,11 +21,20 @@
 
 {% block main %}
 
-<div class="grid-x grid-padding-x grid-padding-y align-center">
+<div class="grid-x grid-padding-x grid-padding-y align-left">
 
     <div class="small-12 medium-8 large-8 cell">
         {% set image = entry.image.one() %}
         <a href="{{entry.domain }}">
+
+        <div class="grid-x grid-padding-x margin-top-1">
+          <div class="small-12 medium-6 cell">
+          <h2>{{ entry.title }}</h2>
+          </div>
+          <div class="small-12 medium-6 cell text-right">
+          {{ entry.postDate | date("M d, Y") }}
+          </div>
+        </div>
 
         <div class="grid-x grid-padding-x grid-padding-y">
           <div class="small-12 medium-12 cell">
@@ -35,36 +44,22 @@
           </div>
         </div>
 
-        <div class="grid-x grid-padding-x margin-top-1">
-          <div class="small-12 medium-6 cell">
-          {{ entry.title }}
-          </div>
-          <div class="small-12 medium-6 cell text-right">
-          {{ entry.postDate | date("M d, Y") }}
-          </div>
-        </div>
-
         </a>
 
   <div class="grid-x grid-padding-x margin-top-1">
-    <div class="small-12 medium-6 cell">
-{#
-    <ul>
-    {% for tag in craft.tags.relatedTo(entry) %}
-        <li>{{ tag.title }}</li>
-    {% endfor %}
-    </ul>
-#}
+    <div class="small-12 medium-12 cell">
+
 
 {% set subjectsTags = entry.subjects.all() %}
 {% if subjectsTags|length %}
-  <ul class="menu">
-    <li class="menu-text">Subjects</li>
-    {% for rel in subjectsTags %}
-    <li><a href="{{ url('tags/'~rel.slug) }}">{{ rel.title }}</a></li>
+  <h4>Subjects</h4>
+  <div class="button-group">
+    {% for tag in subjectsTags %}
+    <a href="{{ url('tags/'~tag.slug) }}" class="button hollow">{{ tag.title }}</a>
     {% endfor %}
-  </ul>
+  </div>
 {% endif %}
+
 
     </div>
   </div>

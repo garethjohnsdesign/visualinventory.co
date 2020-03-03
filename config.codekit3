@@ -283,7 +283,7 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/node_modules/lightgallery/dist/js/lightgallery.js": {
+	"/node_modules/lightGallery/dist/js/lightgallery.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
@@ -1150,6 +1150,30 @@
 		"hM": 0,
 		"oA": 2,
 		"oAP": "/web/assets/favicons/site.webmanifest",
+		"oF": 0
+		},
+	"/web/assets/fonts/acumin-pro-regular.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/web/assets/fonts/acumin-pro-regular.ttf",
+		"oF": 0
+		},
+	"/web/assets/fonts/acumin-pro-regular.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/web/assets/fonts/acumin-pro-regular.woff",
+		"oF": 0
+		},
+	"/web/assets/fonts/acumin-pro-regular.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/web/assets/fonts/acumin-pro-regular.woff2",
 		"oF": 0
 		},
 	"/web/assets/fonts/bressay-regular.ttf": {
