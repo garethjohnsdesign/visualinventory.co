@@ -55,7 +55,7 @@
   <h4>Subjects</h4>
   <div class="button-group">
     {% for tag in subjectsTags %}
-    <a href="{{ url('tags/'~tag.slug) }}" class="button hollow">{{ tag.title }}</a>
+    <a href="{{ url('tags/'~tag.slug) }}" class="rounded button hollow">{{ tag.title }}</a>
     {% endfor %}
   </div>
 {% endif %}
