@@ -14,7 +14,7 @@
     "@swup/scroll-plugin": "^1.0.6",
     "aos": "^2.3.4",
     "foundation-sites": "^6.6.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "js-cookie": "^2.2.1",
     "lg-fullscreen": "^1.1.0",
     "lg-video": "^1.2.2",
